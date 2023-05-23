@@ -1,7 +1,6 @@
-/* simple selector */
+
 body{
   height: 100%;
-  /* background-color: rgb(253, 243, 223); */
 }
 header{
   border-radius: 5px;
@@ -30,7 +29,6 @@ article{
   border-radius: 5px;
   border: 1px solid steelblue;
   background-color: white;
-  /* background-color: tomato; */
 }
 input{
   width: 300px;
@@ -59,7 +57,7 @@ input, label, p, #district{
 #district{
   height: 50px;
 }
-/* combinator selector */
+
 header p{
   text-align: left;
 }
@@ -69,13 +67,13 @@ article p{
   letter-spacing: 2px;
 }
 
-/* pseudo class selector */
+
 input:focus{
   outline: none;
   background-color: gainsboro;
 }
 
-/* pseudo element selector */
+
 header p::first-line{
   font-weight: bold;
   color: rgba(255, 0, 0, 0.582);
@@ -84,7 +82,7 @@ article p::after{
   content: "*";
   color: red;
 }
-/* attribute selector */
+
 input[name^="option"]{
   width: 20px;
   height: 20px;

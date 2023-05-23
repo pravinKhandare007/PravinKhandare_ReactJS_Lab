@@ -21,14 +21,7 @@ export default function ShowData(){
                 // data.reduce
                 setSum(data.reduce((result,v) =>  result + v.price , 0 ))
                 calculateShares(data);
-                // let newPurchase = {
-                //     "payeeName": "Rahul",
-                //     "product": "water",
-                //     "price": 100,
-                //     "setDate": "2022-10-30",
-                // }
-                // const purchasedData = await pushDataFromUser(newPurchase);
-                // console.log(purchasedData);
+                
             }
             catch(error: any){
                 console.error(error);
@@ -39,10 +32,7 @@ export default function ShowData(){
     },[showForm]);
  
     const calculateShares = (data: IDataList[]) => {
-        // Use data.map... 
-        // figure out how much rahul, ramesh spent
-        // setRahulSpent
-        //setRameshSpent
+        
         var rahulspent1 : number = 0
         var rameshspent1 : number = 0
         data.map(
@@ -60,10 +50,7 @@ export default function ShowData(){
     }
     
 
-    //header... Expense Tracker
-    // headers of the table
-    // create rows for the table
-    // Display total, rahul paid, ramesh paid 
+   
     return (
         <>
             <header id="page-Header">Expense Tracker</header>
